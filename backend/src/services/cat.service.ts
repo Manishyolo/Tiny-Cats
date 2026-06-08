@@ -9,7 +9,7 @@ export const getAllCatService = async()=>{
 }
 
 export const getSingleCatservice = async(id:string)=>{
-    return await catModel.findById({id})
+    return await catModel.findById({_id:id})
 }
 
 export const searchCatService = async(query:string)=>{
