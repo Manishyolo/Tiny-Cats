@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json())
 
-app.use("/api/cats/",Catroute);
+app.use("/api/cats",Catroute);
 app.use("/api/ai",aiRoutes)
 app.use("/api/aiRecommend",aiRecommendRoutes);
 
