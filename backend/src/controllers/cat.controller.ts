@@ -52,8 +52,7 @@ export const recommendCatController = async(req:Request,res:Response)=>{
               const result = await recommendCatService(kidsFriendly,apartmentFriendly)
 
                return res.status(200).json({
-            success:true,
-            message:" cat feteched",
+        
             data:result
            })
 
